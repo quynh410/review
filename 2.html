@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const integerVariable = 5;
+        const arrayVariable = [1, 2, 3, 4];
+
+        integerVariable = 10; // Lỗi: không thể gán lại giá trị cho một biến đã được khai báo với const
+
+        arrayVariable.push(5);
+
+        console.log(integerVariable); // Sẽ báo lỗi, giá trị của biến số nguyên không thể thay đổi vì đã được khai báo với const
+        console.log(arrayVariable); // Kết quả: [1, 2, 3, 4, 5]
+
+    </script>
+</body>
+</html>

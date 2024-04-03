@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        function mergeObjects(...objects) {
+            const mergedObject = {};
+            
+            objects.forEach(obj => {
+                for (const key in obj) {
+                    // Kiểm tra nếu thuộc tính đã tồn tại trong mergedObject
+                    // Nếu tồn tại, ghi đè giá trị mới từ đối tượng hiện tại
+                    // Nếu không tồn tại, thêm thuộc tính vào mergedObject
+                    mergedObject[key] = obj[key];
+                }
+            });
+            
+            return mergedObject; 
+        }
+
+        const obj1 = { a: 1, b: 2 };
+        const obj2 = { b: 3, c: 4 };
+        const obj3 = { c: 5, d: 6 };
+
+        const result = mergeObjects(obj1, obj2, obj3);
+        console.log(result); // Kết quả: { a: 1, b: 3, c: 5, d: 6 }
+
+    </script>
+  </body>
+</html>

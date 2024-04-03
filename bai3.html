@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // chu vi , diện tích hình chữ nhật
+      var chieuDai = prompt("Nhập chiều dài của hình chữ nhật:");
+
+      var chieuRong = prompt("Nhập chiều rộng của hình chữ nhật:");
+
+      var chuVi = 2 * (parseInt(chieuDai) + parseInt(chieuRong));
+
+      var dienTich = parseInt(chieuDai) * parseInt(chieuRong);
+
+      console.log("Chu vi của hình chữ nhật là: " + chuVi);
+      console.log("Diện tích của hình chữ nhật là: " + dienTich);
+
+      // chu vi , diện tích hình tròn
+        var banKinh = prompt("Nhập bán kính của hình tròn:");
+
+        var chuVi = 2 * Math.PI * parseFloat(banKinh);
+
+        var dienTich = Math.PI * Math.pow(parseFloat(banKinh), 2);
+
+        console.log("Chu vi của hình tròn là: " + chuVi);
+        console.log("Diện tích của hình tròn là: " + dienTich);
+    </script>
+  </body>
+</html>

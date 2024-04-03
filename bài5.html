@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 5;
+      let b = "5";
+      console.log(a == b);
+      console.log(a === b);
+      console.log(a != b);
+      console.log(a !== b);
+      // đáp án là true false false true
+
+      // == : chỉ so sánh giá trị
+      // ===: so sánh giá trị và kiểu dữ liệu
+
+      // so sánh a++ và ++a
+      // a++: hậu tố thì tăng sau
+      // ++a :Tiền tố thì tăng trước
+      let c = 6;
+      let result = ++c + c + c++ + ++c + c;
+      // kết quả 7 + 7 = 8 + 9 + 8 = 39
+
+      console.log(0 || NaN || "Rikkei Academy" || null); // kq = Rikkei Academy
+      console.log(null || NaN || false || null); // kq = null
+      console.log(undefined || 1 || 5 || null); // kq = 1
+      console.log("" || null || 5 || NaN); // kq  = 5
+      console.log(1 || null || 12 || NaN); // kq  = 1
+
+      console.log(0 && 1 && "Rikkei Academy" && null); // = 0
+      console.log(2 && NaN && false && null); // = NaN
+      console.log(3 && 1 && 5 && null); // = null
+      console.log("1" && undefined && 5 && NaN); // = undefined
+      console.log(1 && null && 12 && NaN); // = null 
+    </script>
+  </body>
+</html>

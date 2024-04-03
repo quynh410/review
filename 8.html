@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function insertArrayAt(arr1, arr2, index) {
+            // Kiểm tra vị trí chèn có hợp lệ không
+            if (index < 0 || index > arr1.length) {
+                console.log("Vị trí chèn không hợp lệ.");
+                return;
+            }
+
+            // Chèn mảng arr2 vào vị trí index của mảng arr1
+            arr1.splice(index, 0, ...arr2);
+        }
+        const array1 = [1, 2, 3, 7, 8];
+        const array2 = [4, 5, 6];
+        const position = 3;
+
+        insertArrayAt(array1, array2, position);
+        console.log(array1); // Kết quả: [1, 2, 3, 4, 5, 6, 7, 8]
+
+        const array3 = ['a', 'b', 'e', 'f'];
+        const array4 = ['c', 'd'];
+        const position2 = 2;
+
+        insertArrayAt(array3, array4, position2);
+        console.log(array3); // Kết quả: ['a', 'b', 'c', 'd', 'e', 'f']
+
+    </script>
+</body>
+</html>
