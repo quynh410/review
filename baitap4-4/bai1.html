@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let arr = [3, 4, 'a', 5.6, 'Hello', 10, 'b'];
+        let arr = ["ư", "r"]
+
+        let integers = arr.filter(element => Number.isInteger(element));
+
+        if (integers.length === 0) {
+            console.log("Trong mảng không tồn tại số nguyên");
+        } else {
+            console.log("Các số nguyên trong mảng là:");
+            integers.forEach(integer => console.log(integer));
+}
+    </script>
+</body>
+</html>
