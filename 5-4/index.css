@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: darkslateblue;
+    text-transform: capitalize;
+}
+.text{
+    color: pink;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+.content{
+    margin-left: 420px;
+}
+.content .r{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    width: 1000px;
+    height: 800px;
+    background-color: white;
+}
+
+.number .num {
+    display: flex;
+    justify-content: center; 
+}
+
+.number .num td {
+    padding: 0 15px; 
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 20px;
+    height: 40px;
+}
+
+.search{
+    width: 700px;
+    height: 50px;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    margin-right: -90px;
+    margin-top: 10px;
+    width: 70px;
+    height: 30px;
+    background-color: lightgray;
+    border-radius: 6px;
+    border: none;
+}
+button .btn{
+    position: absolute;
+    margin-left: -80px;
+}
+
+
+.rating-display {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .content-display {
+    margin-top: 10px;
+  }
